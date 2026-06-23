@@ -68,7 +68,7 @@ Use $clarify-first to summarize what changed and what happens next.
 git clone https://github.com/Jun0zo/response-shaper-skill.git
 cd response-shaper-skill
 npm install
-npm run install:skill
+npx clarify-first-install
 ```
 
 ### From a git URL with npm
@@ -94,7 +94,7 @@ npm login
 npm publish --access public
 ```
 
-The package is already published as `response-shaper-skill@0.1.2`, so `npm install response-shaper-skill` should work now.
+The package is already published as `response-shaper-skill@0.1.3`, so `npm install response-shaper-skill` should work now.
 
 The npm package name stays `response-shaper-skill`, but the skill itself is now `clarify-first`.
 
