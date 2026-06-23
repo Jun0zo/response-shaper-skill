@@ -76,8 +76,6 @@ npx response-shaper-install
 
 ### From npm
 
-`npm install response-shaper-skill` will work after the package is published to the npm registry. Until then, this command returns the 404 you saw.
-
 ```bash
 npm install response-shaper-skill
 npx response-shaper-install
@@ -91,6 +89,8 @@ You need an authenticated npm session before publishing.
 npm login
 npm publish --access public
 ```
+
+The package is already published as `response-shaper-skill@0.1.0`, so `npm install response-shaper-skill` should work now.
 
 ## Where it installs
 
