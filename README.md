@@ -1,37 +1,29 @@
-# Response Shaper Skill
+<div align="center">
+  <img src="skill/assets/response-shaper-icon.png" alt="Response Shaper mark" width="112" />
 
-Installable Codex skill package for turning dense answers into the clearest presentation mode.
+  <h1>Response Shaper</h1>
 
-![Response Shaper hero](skill/assets/response-shaper-hero.png)
+  <p><strong>One request. Many ways to answer.</strong></p>
 
-## What it does
+  <p>Installable Codex skill package for turning dense answers into the clearest presentation mode.</p>
 
-This skill classifies a request or answer and then reshapes it into the most useful form. It does not just paraphrase text. It picks the output shape that makes the answer easiest to use.
+  <p>
+    <a href="#how-it-chooses">How it chooses</a> ·
+    <a href="#example-prompts">Example prompts</a> ·
+    <a href="#install">Install</a> ·
+    <a href="#package-contents">Package contents</a>
+  </p>
+</div>
 
-- `explain` for understanding and cause/effect
-- `visualize` for flow, hierarchy, and relationships
-- `summarize_actions` for what changed or what was done
-- `compare` for trade-offs and options
-- `checklist` for next steps and verification
-- `timeline` for phases and chronology
-- `html` for a shareable visual brief
-- `image` for a single generated visual or infographic
+<hr />
 
-When nothing is explicit, it falls back to a concise structured brief:
+<p align="center">
+  <img src="skill/assets/response-shaper-hero.png" alt="Response Shaper overview" />
+</p>
 
-1. Takeaway
-2. Why it matters
-3. Key points
-4. Next step
-5. Risks or open questions
+## How it chooses
 
-## Brand mark
-
-![Response Shaper icon](skill/assets/response-shaper-icon.png)
-
-The icon is designed to stay readable at small sizes. It combines a speech bubble, stacked response cards, and branching arrows to suggest "take messy input, return a clearer shape."
-
-## How it decides
+When a reply is too dense for plain Markdown, the skill picks the shape that makes it easiest to use. It does not just paraphrase text.
 
 | User intent | Mode | Typical output |
 | --- | --- | --- |
@@ -44,7 +36,15 @@ The icon is designed to stay readable at small sizes. It combines a speech bubbl
 | "Make it a page" | `html` | readable HTML brief |
 | "Make it visual" | `image` | single infographic or visual summary |
 
-## Example usage
+When nothing is explicit, it falls back to a concise structured brief:
+
+1. Takeaway
+2. Why it matters
+3. Key points
+4. Next step
+5. Risks or open questions
+
+## Example prompts
 
 Use the skill when the raw answer would be hard to scan in plain Markdown:
 
@@ -59,7 +59,7 @@ Use $response-shaper to summarize what changed and what happens next.
 ### From git
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Jun0zo/response-shaper-skill.git
 cd response-shaper-skill
 npm install
 npm run install:skill
@@ -68,7 +68,7 @@ npm run install:skill
 ### From a git URL with npm
 
 ```bash
-npm install git+https://github.com/<owner>/response-shaper-skill.git
+npm install git+https://github.com/Jun0zo/response-shaper-skill.git
 npx response-shaper-install
 ```
 
@@ -91,14 +91,11 @@ If `CODEX_HOME` is unset, it falls back to `~/.codex/skills/response-shaper`.
 
 ## Package contents
 
+- `README.md`
+- `package.json`
+- `scripts/install-skill.js`
 - `skill/SKILL.md`
 - `skill/agents/openai.yaml`
 - `skill/references/classification.md`
 - `skill/assets/response-shaper-icon.png`
 - `skill/assets/response-shaper-hero.png`
-- `scripts/install-skill.js`
-
-## Notes
-
-- The deployable skill stays clean and uses `SKILL.md` as the trigger file.
-- `README.md` is for humans and distribution; Codex does not read it as part of the skill trigger.
