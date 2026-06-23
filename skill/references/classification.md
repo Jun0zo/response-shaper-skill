@@ -24,6 +24,7 @@ Use this guide when the user wants a response that is easier to read, easier to 
 ## Signals
 
 - Dense text, unclear scope, many parts, branching logic, or "make this easier to read" -> `card`, `visualize`, or `html` depending on the structure.
+- If the user's goal is understanding, prefer the shortest complete answer and avoid long prose unless detail is the point.
 - "Explain this" -> `explain`.
 - "Show me" / "diagram" / "visualize" -> `visualize`.
 - "What did you do?" / "what changed?" -> `summarize_actions`.

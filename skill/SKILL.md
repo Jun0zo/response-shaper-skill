@@ -1,13 +1,13 @@
 ---
-name: response-shaper
-description: Shape complex requests and answers into the clearest presentation mode. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs. Choose visual or HTML layouts proactively when they are clearer than prose. Mirror the user's language by default.
+name: clarify-first
+description: Shape complex requests and answers into the clearest, easiest-to-understand format. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs. Choose visual or HTML layouts proactively when they improve comprehension. Mirror the user's language by default.
 ---
 
-# Response Shaper
+# Clarify First
 
 ## Overview
 
-Use this skill to turn a dense or ambiguous response into the format that helps the user most. Prefer one primary presentation mode and keep the result easy to scan. The user does not need to say "make it visual" for the skill to pick a visual layout when that is clearer.
+Use this skill to turn a dense or ambiguous response into the format that helps the user understand it fastest. Prefer one primary presentation mode and keep the result easy to scan. The user does not need to say "make it visual" for the skill to pick a visual layout when that is clearer.
 
 ## Choose the mode
 
@@ -36,6 +36,7 @@ Use this skill to turn a dense or ambiguous response into the format that helps 
 - Front-load the answer.
 - Use short labels, bullets, and sections.
 - Keep labels concrete and avoid decorative filler.
+- Optimize for comprehension, not length. Long prose is a fallback, not the default.
 - Mirror the user's language by default. For mixed-language prompts, answer in the dominant language and keep technical terms when translation would reduce clarity.
 - Prefer a visual, table, or HTML layout when the answer has many parts, branching logic, before/after structure, or is easier to grasp spatially than linearly.
 - When describing work, cover input, transformation, output, and next step.

@@ -1,7 +1,7 @@
 {
   "name": "response-shaper-skill",
-  "version": "0.1.1",
-  "description": "Installable Codex skill for shaping complex answers into the clearest presentation mode in the user's language.",
+  "version": "0.1.2",
+  "description": "Installable Codex skill for shaping complex answers into the clearest, understanding-first format.",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -23,6 +23,7 @@
     "response"
   ],
   "bin": {
+    "clarify-first-install": "./bin/response-shaper-install.js",
     "response-shaper-install": "./bin/response-shaper-install.js"
   },
   "scripts": {

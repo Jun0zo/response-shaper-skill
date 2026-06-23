@@ -1,15 +1,17 @@
 <div align="center">
-  <img src="skill/assets/response-shaper-icon.png" alt="Response Shaper mark" width="112" />
+  <img src="skill/assets/response-shaper-icon.png" alt="Clarify First mark" width="112" />
 
-  <h1>Response Shaper</h1>
+  <h1>Clarify First</h1>
 
-  <p><strong>One request. Many ways to answer.</strong></p>
+  <p><strong>Understanding first. Long prose last.</strong></p>
 
-  <p>Installable Codex skill package for turning dense answers into the clearest presentation mode.</p>
+  <p>Installable Codex skill package for turning dense answers into the clearest, easiest-to-understand presentation mode.</p>
 
   <p><strong>Multilingual-ready.</strong> Mirrors the user's language by default, including Korean, English, and mixed-language prompts.</p>
 
   <p><strong>Smart by default.</strong> It can choose visual, table, or HTML output on its own when that is the clearest shape.</p>
+
+  <p><strong>Skill trigger:</strong> <code>$clarify-first</code> · <strong>npm package:</strong> <code>response-shaper-skill</code></p>
 
   <p>
     <a href="#how-it-chooses">How it chooses</a> ·
@@ -22,12 +24,12 @@
 <hr />
 
 <p align="center">
-  <img src="skill/assets/response-shaper-hero.png" alt="Response Shaper overview" />
+  <img src="skill/assets/response-shaper-hero.png" alt="Clarify First overview" />
 </p>
 
 ## How it chooses
 
-When a reply is too dense for plain Markdown, the skill picks the shape that makes it easiest to use. It does not just paraphrase text.
+When a reply is too dense for plain Markdown, the skill picks the shape that makes it easiest to understand. It does not just paraphrase text.
 
 | User intent | Mode | Typical output |
 | --- | --- | --- |
@@ -53,9 +55,9 @@ When nothing is explicit, it falls back to a concise structured brief:
 Use the skill when the raw answer would be hard to scan in plain Markdown:
 
 ```text
-Use $response-shaper to turn this dense update into a clean visual brief.
-Use $response-shaper to explain this concept as a checklist.
-Use $response-shaper to summarize what changed and what happens next.
+Use $clarify-first to turn this dense update into a clean visual brief.
+Use $clarify-first to explain this concept as a checklist.
+Use $clarify-first to summarize what changed and what happens next.
 ```
 
 ## Install
@@ -73,14 +75,14 @@ npm run install:skill
 
 ```bash
 npm install git+https://github.com/Jun0zo/response-shaper-skill.git
-npx response-shaper-install
+npx clarify-first-install
 ```
 
 ### From npm
 
 ```bash
 npm install response-shaper-skill
-npx response-shaper-install
+npx clarify-first-install
 ```
 
 ## Publish to npm
@@ -92,15 +94,17 @@ npm login
 npm publish --access public
 ```
 
-The package is already published as `response-shaper-skill@0.1.1`, so `npm install response-shaper-skill` should work now.
+The package is already published as `response-shaper-skill@0.1.2`, so `npm install response-shaper-skill` should work now.
+
+The npm package name stays `response-shaper-skill`, but the skill itself is now `clarify-first`.
 
 ## Where it installs
 
 By default, the installer copies the skill into:
 
-`$CODEX_HOME/skills/response-shaper`
+`$CODEX_HOME/skills/clarify-first`
 
-If `CODEX_HOME` is unset, it falls back to `~/.codex/skills/response-shaper`.
+If `CODEX_HOME` is unset, it falls back to `~/.codex/skills/clarify-first`.
 
 ## Package contents
 

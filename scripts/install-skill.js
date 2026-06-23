@@ -42,7 +42,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(scriptDir, '..');
 const sourceDir = path.join(repoRoot, 'skill');
 const codexHome = process.env.CODEX_HOME || path.join(os.homedir(), '.codex');
-const targetDir = targetArg ? path.resolve(targetArg) : path.join(codexHome, 'skills', 'response-shaper');
+const targetDir = targetArg ? path.resolve(targetArg) : path.join(codexHome, 'skills', 'clarify-first');
 
 async function exists(dir) {
   try {
@@ -72,12 +72,12 @@ async function main() {
   }
 
   await cp(sourceDir, targetDir, { recursive: true });
-  console.log(`Installed response-shaper skill to ${targetDir}`);
+  console.log(`Installed clarify-first skill to ${targetDir}`);
 }
 
 function printHelp() {
   console.log(`Usage:
-  response-shaper-install [--target <path>] [--force] [--dry-run]
+  clarify-first-install | response-shaper-install [--target <path>] [--force] [--dry-run]
 
 Options:
   --target <path>   Install to a custom path instead of the default Codex skills directory
