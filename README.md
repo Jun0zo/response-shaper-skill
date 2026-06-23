@@ -9,6 +9,8 @@
 
   <p><strong>Multilingual-ready.</strong> Mirrors the user's language by default, including Korean, English, and mixed-language prompts.</p>
 
+  <p><strong>Smart by default.</strong> It can choose visual, table, or HTML output on its own when that is the clearest shape.</p>
+
   <p>
     <a href="#how-it-chooses">How it chooses</a> ·
     <a href="#example-prompts">Example prompts</a> ·
@@ -90,7 +92,7 @@ npm login
 npm publish --access public
 ```
 
-The package is already published as `response-shaper-skill@0.1.0`, so `npm install response-shaper-skill` should work now.
+The package is already published as `response-shaper-skill@0.1.1`, so `npm install response-shaper-skill` should work now.
 
 ## Where it installs
 

@@ -1,13 +1,13 @@
 ---
 name: response-shaper
-description: Shape complex requests and answers into the clearest presentation mode. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs. Mirror the user's language by default.
+description: Shape complex requests and answers into the clearest presentation mode. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs. Choose visual or HTML layouts proactively when they are clearer than prose. Mirror the user's language by default.
 ---
 
 # Response Shaper
 
 ## Overview
 
-Use this skill to turn a dense or ambiguous response into the format that helps the user most. Prefer one primary presentation mode and keep the result easy to scan.
+Use this skill to turn a dense or ambiguous response into the format that helps the user most. Prefer one primary presentation mode and keep the result easy to scan. The user does not need to say "make it visual" for the skill to pick a visual layout when that is clearer.
 
 ## Choose the mode
 
@@ -25,10 +25,11 @@ Use this skill to turn a dense or ambiguous response into the format that helps 
 
 1. Start with the user's explicit request. If they ask for a format, honor it.
 2. If no format is named, infer the dominant intent from the content shape.
-3. Prefer one primary output mode; add a secondary mode only if it improves clarity.
-4. When the input is messy or broad, default to a concise structured brief: takeaway, explanation, what changed or what to do, risks, open questions.
-5. If the user asks what was done, include the transformation steps, not just the final output.
-6. If the user wants a visual, translate the answer into a diagram or card hierarchy rather than long prose.
+3. If a visual, table, card, or HTML layout would reduce cognitive load, choose it proactively even when the user did not ask for it explicitly.
+4. Prefer one primary output mode; add a secondary mode only if it improves clarity.
+5. When the input is messy or broad, default to a concise structured brief: takeaway, explanation, what changed or what to do, risks, open questions.
+6. If the user asks what was done, include the transformation steps, not just the final output.
+7. If the user wants a visual, translate the answer into a diagram or card hierarchy rather than long prose.
 
 ## Output Rules
 
@@ -36,6 +37,7 @@ Use this skill to turn a dense or ambiguous response into the format that helps 
 - Use short labels, bullets, and sections.
 - Keep labels concrete and avoid decorative filler.
 - Mirror the user's language by default. For mixed-language prompts, answer in the dominant language and keep technical terms when translation would reduce clarity.
+- Prefer a visual, table, or HTML layout when the answer has many parts, branching logic, before/after structure, or is easier to grasp spatially than linearly.
 - When describing work, cover input, transformation, output, and next step.
 - If the answer is better in HTML or image form, switch to that medium instead of forcing Markdown.
 

@@ -1,6 +1,6 @@
 {
   "name": "response-shaper-skill",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Installable Codex skill for shaping complex answers into the clearest presentation mode in the user's language.",
   "type": "module",
   "license": "MIT",

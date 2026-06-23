@@ -4,4 +4,4 @@ interface:
   icon_small: "./assets/response-shaper-icon.png"
   icon_large: "./assets/response-shaper-icon.png"
   brand_color: "#0E3A5B"
-  default_prompt: "Use $response-shaper to turn complex answers into the clearest format, choosing between explanation, visualization, summary, checklist, comparison, or timeline. Mirror the user's language by default and localize labels for HTML or image outputs."
+  default_prompt: "Use $response-shaper to turn complex answers into the clearest format, proactively choosing explanation, visualization, summary, checklist, comparison, timeline, HTML, or image when that is easier to read. Mirror the user's language by default and localize labels for HTML or image outputs."

@@ -5,7 +5,7 @@ Use this guide when the user wants a response that is easier to read, easier to 
 ## Priority Order
 
 1. Honor the user's explicit format request first.
-2. Pick the output mode that best matches the content shape.
+2. Pick the output mode that best matches the content shape, even if that means choosing a visual layout without an explicit "make it visual" request.
 3. Prefer one primary mode.
 4. Fall back to a concise structured brief when the request is broad or ambiguous.
 
@@ -23,7 +23,7 @@ Use this guide when the user wants a response that is easier to read, easier to 
 
 ## Signals
 
-- Dense text, unclear scope, or "make this easier to read" -> `card` or structured brief.
+- Dense text, unclear scope, many parts, branching logic, or "make this easier to read" -> `card`, `visualize`, or `html` depending on the structure.
 - "Explain this" -> `explain`.
 - "Show me" / "diagram" / "visualize" -> `visualize`.
 - "What did you do?" / "what changed?" -> `summarize_actions`.
@@ -48,4 +48,5 @@ When no mode stands out, answer with:
 - Avoid mixing many modes in one answer unless the user explicitly wants it.
 - Keep visuals simple and readable; use hierarchy instead of decoration.
 - Mirror the user's language by default. For mixed-language input, answer in the dominant language and keep proper nouns or technical terms as-is when translation would hurt clarity.
+- Do not force prose when a visual or HTML layout would make the answer easier to follow.
 - If the user wants a visual but the content is not suited to an image, choose HTML or table instead and say why.
