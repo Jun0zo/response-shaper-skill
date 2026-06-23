@@ -1,5 +1,5 @@
 {
-  "name": "response-shaper-skill",
+  "name": "clarify-first",
   "version": "0.1.3",
   "description": "Installable Codex skill for shaping complex answers into the clearest, understanding-first format.",
   "type": "module",
@@ -9,22 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jun0zo/response-shaper-skill.git"
+    "url": "https://github.com/Jun0zo/clarify-first.git"
   },
-  "homepage": "https://github.com/Jun0zo/response-shaper-skill#readme",
+  "homepage": "https://github.com/Jun0zo/clarify-first#readme",
   "bugs": {
-    "url": "https://github.com/Jun0zo/response-shaper-skill/issues"
+    "url": "https://github.com/Jun0zo/clarify-first/issues"
   },
   "keywords": [
     "codex",
+    "clarify-first",
     "skill",
     "multilingual",
     "markdown",
     "response"
   ],
   "bin": {
-    "clarify-first-install": "./bin/response-shaper-install.js",
-    "response-shaper-install": "./bin/response-shaper-install.js"
+    "clarify-first-install": "./bin/clarify-first-install.js",
+    "response-shaper-install": "./bin/clarify-first-install.js"
   },
   "scripts": {
     "install:skill": "node ./scripts/install-skill.js"

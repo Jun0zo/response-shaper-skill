@@ -1,17 +1,15 @@
 <div align="center">
-  <img src="skill/assets/response-shaper-icon.png" alt="Clarify First mark" width="112" />
-
   <h1>Clarify First</h1>
 
   <p><strong>Understanding first. Long prose last.</strong></p>
 
-  <p>Installable Codex skill package for turning dense answers into the clearest, easiest-to-understand presentation mode.</p>
+  <p>Installable Codex skill package for turning dense answers into the clearest shape for the user's goal.</p>
 
   <p><strong>Multilingual-ready.</strong> Mirrors the user's language by default, including Korean, English, and mixed-language prompts.</p>
 
-  <p><strong>Smart by default.</strong> It can choose visual, table, or HTML output on its own when that is the clearest shape.</p>
+  <p><strong>Smart by default.</strong> Chooses the clearest output mode on its own when a visual, table, or HTML layout will help more than plain Markdown.</p>
 
-  <p><strong>Skill trigger:</strong> <code>$clarify-first</code> · <strong>npm package:</strong> <code>response-shaper-skill</code></p>
+  <p><strong>Skill trigger:</strong> <code>$clarify-first</code> · <strong>npm package:</strong> <code>clarify-first</code></p>
 
   <p>
     <a href="#how-it-chooses">How it chooses</a> ·
@@ -24,7 +22,7 @@
 <hr />
 
 <p align="center">
-  <img src="skill/assets/response-shaper-hero.png" alt="Clarify First overview" />
+  <img src="skill/assets/clarify-first-hero.png" alt="Clarify First overview" />
 </p>
 
 ## How it chooses
@@ -65,8 +63,8 @@ Use $clarify-first to summarize what changed and what happens next.
 ### From git
 
 ```bash
-git clone https://github.com/Jun0zo/response-shaper-skill.git
-cd response-shaper-skill
+git clone https://github.com/Jun0zo/clarify-first.git
+cd clarify-first
 npm install
 npx clarify-first-install
 ```
@@ -74,14 +72,14 @@ npx clarify-first-install
 ### From a git URL with npm
 
 ```bash
-npm install git+https://github.com/Jun0zo/response-shaper-skill.git
+npm install git+https://github.com/Jun0zo/clarify-first.git
 npx clarify-first-install
 ```
 
 ### From npm
 
 ```bash
-npm install response-shaper-skill
+npm install clarify-first
 npx clarify-first-install
 ```
 
@@ -94,9 +92,9 @@ npm login
 npm publish --access public
 ```
 
-The package is already published as `response-shaper-skill@0.1.3`, so `npm install response-shaper-skill` should work now.
+The package is published as `clarify-first@0.1.3`, so `npm install clarify-first` should work now.
 
-The npm package name stays `response-shaper-skill`, but the skill itself is now `clarify-first`.
+The npm package name now matches the skill name: `clarify-first`.
 
 ## Where it installs
 
@@ -114,5 +112,5 @@ If `CODEX_HOME` is unset, it falls back to `~/.codex/skills/clarify-first`.
 - `skill/SKILL.md`
 - `skill/agents/openai.yaml`
 - `skill/references/classification.md`
-- `skill/assets/response-shaper-icon.png`
-- `skill/assets/response-shaper-hero.png`
+- `skill/assets/clarify-first-icon.png`
+- `skill/assets/clarify-first-hero.png`
