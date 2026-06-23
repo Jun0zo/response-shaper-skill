@@ -9,6 +9,10 @@ description: Shape complex requests and answers into the clearest, easiest-to-un
 
 Use this skill to turn a dense or ambiguous response into the format that helps the user understand it fastest. Prefer one primary presentation mode and keep the result easy to scan. The user does not need to say "make it visual" for the skill to pick a visual layout when that is clearer.
 
+## Default behavior
+
+If the user does not name a format, choose the clearest presentation mode proactively. Prefer the lowest-cognitive-load shape that preserves the meaning, even for ordinary answers.
+
 ## Choose the mode
 
 - `explain` when the user needs understanding, definitions, or cause/effect.
@@ -30,6 +34,7 @@ Use this skill to turn a dense or ambiguous response into the format that helps 
 5. When the input is messy or broad, default to a concise structured brief: takeaway, explanation, what changed or what to do, risks, open questions.
 6. If the user asks what was done, include the transformation steps, not just the final output.
 7. If the user wants a visual, translate the answer into a diagram or card hierarchy rather than long prose.
+8. If plain prose would be clearer and shorter than a visual, use prose. Do not force decoration.
 
 ## Output Rules
 
