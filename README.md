@@ -114,3 +114,14 @@ If `CODEX_HOME` is unset, it falls back to `~/.codex/skills/clarify-first`.
 - `skill/references/classification.md`
 - `skill/assets/clarify-first-icon.png`
 - `skill/assets/clarify-first-hero.png`
+
+## Evaluation
+
+This repo includes a lightweight benchmark pack under `benchmarks/` for smoke-testing:
+
+- mode selection
+- multilingual behavior
+- brevity
+- visual or HTML choices when they improve comprehension
+
+It is intentionally heuristic. The closest public analogs are broader instruction-following evals such as MT-Bench, AlpacaEval, HELM, OpenAI Evals, and Promptfoo. For this skill, the best signal is still a mix of benchmark cases and human review.
