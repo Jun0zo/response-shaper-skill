@@ -34,6 +34,13 @@ npm install
 npm run install:skill
 ```
 
+### From a git URL with npm
+
+```bash
+npm install git+https://github.com/<owner>/response-shaper-skill.git
+npx response-shaper-install
+```
+
 ### From npm
 
 After publishing the package:
