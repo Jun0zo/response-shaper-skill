@@ -23,7 +23,7 @@
     "response"
   ],
   "bin": {
-    "response-shaper-install": "./scripts/install-skill.js"
+    "response-shaper-install": "./bin/response-shaper-install.js"
   },
   "scripts": {
     "install:skill": "node ./scripts/install-skill.js"
@@ -33,6 +33,7 @@
   },
   "files": [
     "README.md",
+    "bin",
     "scripts",
     "skill"
   ]
