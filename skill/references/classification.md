@@ -47,4 +47,5 @@ When no mode stands out, answer with:
 
 - Avoid mixing many modes in one answer unless the user explicitly wants it.
 - Keep visuals simple and readable; use hierarchy instead of decoration.
+- Mirror the user's language by default. For mixed-language input, answer in the dominant language and keep proper nouns or technical terms as-is when translation would hurt clarity.
 - If the user wants a visual but the content is not suited to an image, choose HTML or table instead and say why.

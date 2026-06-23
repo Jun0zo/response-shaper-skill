@@ -1,6 +1,6 @@
 ---
 name: response-shaper
-description: Shape complex requests and answers into the clearest presentation mode. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs.
+description: Shape complex requests and answers into the clearest presentation mode. Use when the user asks to explain, visualize, summarize what was done, compare options, turn dense text/Markdown/chat updates into a readable brief, or choose between HTML, image, checklist, timeline, table, or diagram outputs. Mirror the user's language by default.
 ---
 
 # Response Shaper
@@ -35,6 +35,7 @@ Use this skill to turn a dense or ambiguous response into the format that helps 
 - Front-load the answer.
 - Use short labels, bullets, and sections.
 - Keep labels concrete and avoid decorative filler.
+- Mirror the user's language by default. For mixed-language prompts, answer in the dominant language and keep technical terms when translation would reduce clarity.
 - When describing work, cover input, transformation, output, and next step.
 - If the answer is better in HTML or image form, switch to that medium instead of forcing Markdown.
 

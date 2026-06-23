@@ -7,6 +7,8 @@
 
   <p>Installable Codex skill package for turning dense answers into the clearest presentation mode.</p>
 
+  <p><strong>Multilingual-ready.</strong> Mirrors the user's language by default, including Korean, English, and mixed-language prompts.</p>
+
   <p>
     <a href="#how-it-chooses">How it chooses</a> ·
     <a href="#example-prompts">Example prompts</a> ·
@@ -74,11 +76,20 @@ npx response-shaper-install
 
 ### From npm
 
-After publishing the package:
+`npm install response-shaper-skill` will work after the package is published to the npm registry. Until then, this command returns the 404 you saw.
 
 ```bash
 npm install response-shaper-skill
 npx response-shaper-install
+```
+
+## Publish to npm
+
+You need an authenticated npm session before publishing.
+
+```bash
+npm login
+npm publish --access public
 ```
 
 ## Where it installs
