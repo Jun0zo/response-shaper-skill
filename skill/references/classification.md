@@ -9,6 +9,10 @@ Use this guide when the user wants a response that is easier to read, easier to 
 3. Prefer one primary mode.
 4. Fall back to a concise structured brief when the request is broad or ambiguous.
 
+## Default Behavior
+
+If no format is requested, do not default to plain prose by habit. Choose the clearest mode that reduces effort for the user while preserving the answer.
+
 ## Mode Selection
 
 - `explain`: use for definitions, concepts, cause/effect, or "what does this mean?"
@@ -25,6 +29,7 @@ Use this guide when the user wants a response that is easier to read, easier to 
 
 - Dense text, unclear scope, many parts, branching logic, or "make this easier to read" -> `card`, `visualize`, or `html` depending on the structure.
 - If the user's goal is understanding, prefer the shortest complete answer and avoid long prose unless detail is the point.
+- If the user's request is simple and prose is already the clearest form, keep it concise and do not add a visual just to add one.
 - "Explain this" -> `explain`.
 - "Show me" / "diagram" / "visualize" -> `visualize`.
 - "What did you do?" / "what changed?" -> `summarize_actions`.
@@ -50,4 +55,5 @@ When no mode stands out, answer with:
 - Keep visuals simple and readable; use hierarchy instead of decoration.
 - Mirror the user's language by default. For mixed-language input, answer in the dominant language and keep proper nouns or technical terms as-is when translation would hurt clarity.
 - Do not force prose when a visual or HTML layout would make the answer easier to follow.
+- Do not force a plain paragraph when a structured format would reduce cognitive load.
 - If the user wants a visual but the content is not suited to an image, choose HTML or table instead and say why.
